@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+    color: darkslateblue;
+}
+header {
+    background-color: white;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2 {
+    color: purple;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: darkslateblue;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: purple;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 40px;
+    gap: 30px;
+}
+.home div {
+    max-width: 550px;
+}
+.home h3 {
+    color: purple;
+    margin-bottom: 15px;
+}
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.home p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.home a {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.home a:hover {
+    background-color: darkslateblue;
+}
+.home img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 60px 30px;
+}
+.about h2 {
+    color: purple;
+    margin-bottom: 20px;
+}
+.about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+.about a {
+    display: inline-block;
+    margin-top: 20px;
+    color: purple;
+    font-weight: bold;
+}
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+}
+.skills h2 {
+    margin-bottom: 25px;
+}
+.skills p {
+    display: inline-block;
+    background-color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.projects {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.projects h2 {
+    color: purple;
+    margin-bottom: 30px;
+}
+
+.projects div {
+    display: inline-block;
+    background-color: lavender;
+    width: 280px;
+    padding: 25px;
+    margin: 12px;
+    border-radius: 12px;
+    vertical-align: top;
+}
+
+.projects h3 {
+    margin-bottom: 15px;
+}
+
+.projects p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.projects a {
+    color: purple;
+    font-weight: bold;
+}
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+.contact h2 {
+    color: purple;
+    margin-bottom: 15px;
+}
+.contact p {
+    margin-bottom: 20px;
+}
+.contact a {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+footer {
+    background-color: darkslateblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .home h1 {
+        font-size: 32px;
+    }
+    .home img {
+        width: 230px;
+        height: 290px;
+    }
+    .projects div {
+        width: 90%;
+    }
+}
